@@ -1,0 +1,245 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 5px 5px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+
+header .logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+}
+
+.search-bar .icon {
+    color: #fff;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agency {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.headline {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.agency-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.agency-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.agency-text {
+    width: 100%;
+    text-align: left;
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-with-icon i {
+    font-size: 2em;
+    color: #333;
+    margin-right: 15px;
+}
+
+.text-with-icon p {
+    font-size: 1.5em;
+    line-height: 1.8;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .agency-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .agency-image img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .agency-text {
+        text-align: center;
+    }
+
+    .text-with-icon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-with-icon i {
+        margin-bottom: 10px;
+    }
+}
+main {
+    padding-top: 100px; 
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0; /* Reduzir o padding */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px; /* Reduzir o padding */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px; /* Reduzir a largura mínima */
+    margin: 5px; /* Reduzir a margem */
+}
+
+.footer-section h2 {
+    font-size: 1.2em; /* Reduzir o tamanho da fonte */
+    margin-bottom: 5px; /* Reduzir a margem inferior */
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 0.9em; /* Reduzir o tamanho da fonte */
+    line-height: 1.2em; /* Reduzir a altura da linha */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px; /* Reduzir a margem inferior */
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6347;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px; /* Reduzir o padding */
+    background-color: #222;
+    font-size: 0.8em; /* Reduzir o tamanho da fonte */
+}
+
+.footer-bottom a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}

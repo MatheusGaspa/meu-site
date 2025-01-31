@@ -1,0 +1,236 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 5px 5px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+
+header .logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 5px 35px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    outline: none;
+}
+
+.search-bar .icon {
+    color: #fff;
+    cursor: pointer;
+}
+main {
+    padding-top: 80px; /* Adjusted for fixed header */
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-section {
+    margin: 200px auto;
+    max-width: 500px;
+}
+
+.contact-section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.map img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0; /* Reduzir o padding */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px; /* Reduzir o padding */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px; /* Reduzir a largura mínima */
+    margin: 5px; /* Reduzir a margem */
+}
+
+.footer-section h2 {
+    font-size: 1.2em; /* Reduzir o tamanho da fonte */
+    margin-bottom: 5px; /* Reduzir a margem inferior */
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 0.9em; /* Reduzir o tamanho da fonte */
+    line-height: 1.2em; /* Reduzir a altura da linha */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px; /* Reduzir a margem inferior */
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff6347;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px; /* Reduzir o padding */
+    background-color: #222;
+    font-size: 0.8em; /* Reduzir o tamanho da fonte */
+}
+
+.footer-bottom a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
