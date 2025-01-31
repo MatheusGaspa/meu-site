@@ -77,7 +77,7 @@ nav ul li a:hover {
     cursor: pointer;
 }
 main {
-    padding-top: 80px; /* Adjusted for fixed header */
+    padding-top: 80px; 
     text-align: center;
     padding: 20px;
 }
